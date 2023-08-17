@@ -8,52 +8,58 @@
   </head>
   <body>
     <header>
-      <figure class="logotipo">
+      <figure id="logotipo">
         <img src="/assets/logotipo.png" alt="" />
         <h1>PetStore</h1>
       </figure>
       <nav>
         <ul>
-          <li><a href="">ÍNICIO</a></li>
-          <li><a href="">SOBRE</a></li>
-          <li><a href="">LOCALIZAÇÃO</a></li>
-          <li><a href="">CONTATO</a></li>
+          <li><a href="#inicio">ÍNICIO</a></li>
+          <li><a href="#sobre">SOBRE</a></li>
+          <li><a href="#localizacao">LOCALIZAÇÃO</a></li>
+          <li><a href="#contato">CONTATO</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="inicio">
+      <section id="inicio">
         <h2>O melhor lugar para o seu amiguinho</h2>
-        <figure></figure>
+        <figure>
+        </figure>
       </section>
-      <section class="sobre">
-        <h1>Sobre</h1>
+      <section id="sobre">
+        <!-- <h1>Sobre</h1> -->
         <article>
-          <figure>
-            <img src="/assets/sobre.png" alt="" />
-          </figure>
+          <figure></figure>
           <p>
             A PetStore sempre oferece os produtos de maior qualidade e custo
-            benefício para agradar o seu animalzinho
+            benefício para agradar o seu animalzinho.
           </p>
         </article>
       </section>
-      <section class="localizacao">
-        <h1>Localização</h1>
+      <section id="localizacao">
+        <!-- <h1>Localização</h1> -->
         <article>
-          <figure>
-            <img src="/assets/localizacao.png" alt="" />
-          </figure>
-          <p>Aberto de tal dia a tal dia, venha conhecer a nossa loja</p>
+          <figure></figure>
+          <aside>
+            <p>Aberto de tal dia a tal dia, venha conhecer a nossa loja</p>
+            <map name="loc"></map>
+          </aside>
         </article>
       </section>
-      <footer>
+      <footer id="contato">
         <h1>Contato</h1>
         <article>
           <p>Siga a PetStore para ficar por dentro de novidades e promoções</p>
-          <figure class="logotipo">
+          <div class="social-medias">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+          </div>
+          <figure id="logotipo">
             <img src="/assets/logotipo.png" alt="" />
-            <h1>PesStore</h1>
+            <h2>PetStore</h2>
           </figure>
         </article>
       </footer>
