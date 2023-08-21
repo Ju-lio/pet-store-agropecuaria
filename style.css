@@ -62,7 +62,7 @@ header {
   z-index: 99;
 }
 
-#logotipo {
+.logotipo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +70,7 @@ header {
   font-size: 10px;
 }
 
-#logotipo img{
+.logotipo img{
   display: flex;
   width: 35px;
   height: 35px;
@@ -122,13 +122,8 @@ main {
 #inicio {
   width: 100vw;
   height: 100vh;
-}
-
-#inicio figure {
-  background: url("/assets/inicio2.png") no-repeat center;
+  background: url('assets/inicio2.png') no-repeat center;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
 }
 
 #inicio h2 {
@@ -189,7 +184,7 @@ main {
 #localizacao figure {
   width: 40vw;
   height: 100vh;
-  background: url("/assets/localizacao.png") no-repeat center;
+  background: url('assets/localizacao.png') no-repeat center;
   background-size: cover;
 }
 
@@ -243,7 +238,7 @@ footer p {
 /* MEDIA  */
 
 @media screen and (max-width: 700px){
-  #logotipo h1 {
+  .logotipo h1 {
       display: none;
   }
 }
