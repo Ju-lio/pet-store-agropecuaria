@@ -8,11 +8,24 @@
   </head>
   <body>
     <header>
+      <nav id="navMobile">
+        <div id="menu" onclick="myFunction()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="ulMobile">
+          <li><a href="#inicio">ÍNICIO</a></li>
+          <li><a href="#sobre">SOBRE</a></li>
+          <li><a href="#localizacao">LOCALIZAÇÃO</a></li>
+          <li><a href="#contato">CONTATO</a></li>
+        </ul>
+      </nav>
       <figure class="logotipo">
         <img src="assets/logotipo.png" alt="" />
         <h1>PetStore</h1>
       </figure>
-      <nav>
+      <nav id="navDesktop">
         <ul>
           <li><a href="#inicio">ÍNICIO</a></li>
           <li><a href="#sobre">SOBRE</a></li>
@@ -22,31 +35,41 @@
       </nav>
     </header>
     <main>
+
       <section id="inicio">
-        <h2>O melhor lugar para o seu amiguinho</h2>
-      </section>
-      <section id="sobre">
-        <!-- <h1>Sobre</h1> -->
         <article>
-          <figure></figure>
+           <h2>O melhor lugar para o seu amiguinho</h2>
+        </article>
+      </section>
+
+      <section id="sobre">
+        
+        <article>
+          <h1>Sobre</h1>
           <p>
             A PetStore sempre oferece os produtos de maior qualidade e custo
             benefício para agradar o seu animalzinho.
           </p>
         </article>
+        <aside>
+          <figure></figure>
+        </aside>
+
       </section>
+
       <section id="localizacao">
         <!-- <h1>Localização</h1> -->
         <article>
-          <figure></figure>
-          <aside>
-            <p>Aberto de tal dia a tal dia, venha conhecer a nossa loja</p>
-            <map name="loc"></map>
-          </aside>
+          <p>Aberto de tal dia a tal dia, <br> venha conhecer a nossa loja</p>
+          <div id="map"></div>
         </article>
+        <aside>
+          <figure></figure>
+        </aside>
       </section>
+
       <footer id="contato">
-        <h1>Contato</h1>
+        <!-- <h1>Contato</h1> -->
         <article>
           <p>Siga a PetStore para ficar por dentro de novidades e promoções</p>
           <div class="social-medias">
@@ -61,6 +84,18 @@
           </figure>
         </article>
       </footer>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("ulMobile");
+          if (x.style.display === "flex") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "flex";
+          }
+        } 
+      </script>
+
     </main>
   </body>
 </html>
